@@ -1,5 +1,5 @@
 # Test Task
-#### Creators: Muhammad Umair Sabir
+#### Creator: Muhammad Umair Sabir
 #### Overview
 This is just a small RESTful API, available via HTTP shopping basket 
 
