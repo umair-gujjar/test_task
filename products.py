@@ -21,7 +21,7 @@ class Product(object):
         self.cursor.execute("SELECT * from Product")
         data = self.cursor.fetchall()
         if data is None:
-            api.abort(404, "Product {} doesn't exist".format(id))
+            abort(404, "Product {} doesn't exist".format(id))
         else:
             all_products = []
             for d in data:
