@@ -14,7 +14,7 @@ class Basket(object):
         self.cursor.execute(sql)
         data = self.cursor.fetchone()
         if data is None:
-            api.abort(404, "Basket item {} doesn't exist".format(id))
+            abort(404, "Basket item {} doesn't exist".format(id))
         else:
             data = dict(zip(self.columns,data))
             return jsonify(results=data)
@@ -26,7 +26,7 @@ class Basket(object):
         self.cursor.execute(sql)
         data = self.cursor.fetchone()
         if data is None:
-            api.abort(404, "Basket item {} doesn't exist".format(id))
+            abort(404, "Basket item {} doesn't exist".format(id))
         else:
             data = dict(zip(self.columns,data))
             return jsonify(results=data)
