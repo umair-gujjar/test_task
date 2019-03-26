@@ -1,0 +1,15 @@
+---
+# Every test file has one or more tests...
+test_name: Shoping Basket Api test
+
+# each test has one or more stages (e.g. an HTTP request)
+stages:
+  - name: Get all items in Basket
+    # Define the request to be made...
+    request:
+      url: http://localhost/Basket/
+      method: GET
+
+    # ...and the expected response code and body
+    response:
+      status_code: 200
